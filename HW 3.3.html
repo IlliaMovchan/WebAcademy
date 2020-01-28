@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>HW 3.3</title>
+</head>
+<body>
+    <div class="menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle"><span></span></label>
+
+        <ul class="menu-box">
+            <li><a class="menu-item" href="#">Inbox</a></li>
+            <li><a class="menu-item" href="#">Starred</a></li>
+            <li><a class="menu-item" href="#">Send email</a></li>
+            <li><a class="menu-item" href="#">Drafts</a></li>
+            <li><a class="menu-item" href="#">All mail</a></li>
+        </ul>
+    </div>
+</body>
+<style>
+#menu-toggle {
+    opacity: 0;
+}
+
+#menu-toggle:checked ~ .menu-btn > span {
+    transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menu-box {
+    visibility: visible;
+    left: 0;
+}
+.menu-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #616161;
+    transition-duration: 0.5s;
+    
+}
+.menu-btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu-btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+.menu-box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #29292d;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: 0.5s;
+}
+
+.menu-item {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.menu-item:hover {
+    background-color: #1a1b1f;
+}
+</style>
+</html>

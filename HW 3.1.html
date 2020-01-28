@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW 3.1</title>
+</head>
+<body>
+
+    <input type="text" placeholder="Outlined">
+
+</body>
+<style>
+    input {
+        width: 250px;
+        height: 21px;
+        margin: 150px;
+        padding: 12px;
+        border: 1px solid gray;
+        border-radius: 5px;
+    }
+    input:focus {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid #1976D2;
+        border-right: 2px solid #1976D2;
+        border-left: 2px solid #1976D2;
+        background: linear-gradient(#1976D2, #1976D2), linear-gradient(#1976D2, #1976D2);
+        background-size: 18px 2px, 182px 2px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: left top, right top;
+        font-size: larger;
+    }
+    input::placeholder {
+        transition: 0.5s; 
+        color: #aaa; 
+    }
+    input:focus::placeholder {
+        font-size: 13px;
+        transform: translate(+18px, -19px);
+        transition: 0.5s; 
+    }
+</style>
+</html>
