@@ -1,0 +1,40 @@
+<h1>Simple Dropdown Menu</h1>
+
+<div class="buttonContainer">
+    <button>Dropdown Menu Button</button>
+    <div class="listContainer">
+        <div>Android</div>
+        <div>PHP</div>
+        <div>Blogger</div>
+        <div>WordPress</div>
+    </div>
+</div>
+<style>
+    .buttonContainer > div {
+        display: none;
+    }
+    .buttonContainer:hover > div {
+        display: block;
+    }
+    button{
+        background-color: #3939a9;
+        border: 2px solid gray;
+        border-radius: 10px;
+        color: white;
+        height: 40px;
+        width: 160px;
+        text-align: justify;
+    }
+    .listContainer{
+        border: 1px solid;
+        width: fit-content;
+        padding-right: 50px;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        margin: 10px 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+</style>

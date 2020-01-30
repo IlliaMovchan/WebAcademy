@@ -1,0 +1,87 @@
+<a href="index.html">Home</a>
+<br/>
+<br/>
+<h1>Форма заявкина работу в зоопарке</h1>
+<h4><i>Пожалуйста, заполните форму. Обязательные поля помечены <span style="color: red;">*</span></i></h4>
+<form>
+    <fieldset>
+        <legend>Контактная информация</legend>
+        <p>
+            <label for="name">Имя*</label>
+            <input type="text" required name="name"/>
+        </p>
+        <p>
+            <label for="phone">Телефон</label>
+            <input type="tel" name="phone"/>
+        </p>
+        <p>
+            <label for="email">Email*</label>
+            <input type="email" required name="email"/>
+        </p>
+    </fieldset>
+<br/>
+    <fieldset>
+        <legend>Персональная информация</legend>
+        <p>
+            <label for="age">Возраст*</label>
+            <input type="text" required name="age"/>
+        </p>
+        <p>
+            <label for="sex">Пол</label>
+            <select name="sex">
+            <option value="Женщина">Женщина</option>
+            <option value="Мужчина">Мужчина</option>
+            </select>
+        </p>
+        <p class="personal">
+            <label for="personal">Пречислите личные качества</label>
+            <textarea name="personal" cols="23" rows="5"></textarea>
+        </p>
+    </fieldset>
+<br/>
+    <fieldset class="last">
+        <legend>Выберите ваших любимых животных</legend>
+        <input type="checkbox" name="Зебра" id="1">
+        <label for="1">Зебра</label>   
+        <input type="checkbox" name="Кошак" id="2">
+        <label for="2">Кошак</label>
+        <input type="checkbox" name="Анаконда" id="3">
+        <label for="3">Анаконда</label>
+        <input type="checkbox" name="Человек" id="4">
+        <label for="4">Человек</label><br/>
+        <input type="checkbox" name="Слон" id="5">
+        <label for="5">Слон</label>
+        <input type="checkbox" name="Антилопа" id="6">
+        <label for="6">Антилопа</label>
+        <input type="checkbox" name="Голубь" id="7">
+        <label for="7">Голубь</label>
+        <input type="checkbox" name="Краб" id="8">
+        <label for="8">Краб</label>
+    </fieldset>
+    <br>
+    <button type="submit">Отправить информацию</button> 
+</form>
+
+
+<style>
+fieldset{
+    max-width: 450px;
+}
+input{
+    margin-right: 150px;
+    float: right;
+}
+select{
+    margin-right: 150px;
+    float: right;
+    width: 173px;
+}
+.personal label{
+    width: 28%;
+    float: left;
+}
+.last input{
+    float: none;
+    margin: 5px 15px;
+}
+</style>

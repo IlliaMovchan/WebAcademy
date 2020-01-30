@@ -1,0 +1,86 @@
+<div>
+    Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem<br>
+    Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem<br>
+    Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem<br>
+    Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem<br>
+</div>
+<div class="modalContainer">
+    <div class="modalContent">
+        <form action="">
+            <h1>Login in</h1>
+            <p>this is dumb modal window, click x to close</p>
+            <span>X</span>
+            <input type="text" placeholder="username or email">
+            <input type="password" placeholder="password">
+            <button class="buttonLog">Login in</button>
+            <button class="buttonCan">cancel</button>
+        </form>
+    </div>
+</div>
+
+
+<style>
+    .modalContainer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(12, 12, 12, 0.75);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+    }
+    .modalContent{
+        width: 400px;
+        height: 300px;
+        background-color: whitesmoke;
+        border-radius: 15px;
+        position: absolute;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        color: #9e9e9e9e;
+    }
+    .modalContent span{
+        position: absolute;
+        top: 5%;
+        left: 92%;
+        color: #696464;
+    }
+    ::placeholder{
+        color: #9e9e9e9e;
+        padding-left: 5px;
+    }
+    input{
+        border: 2px solid #696464;
+        border-radius: 5px;
+        width: 70%;
+        height: 35px;
+        margin: 2% 15%;
+        padding: 6px;
+    }
+    .buttonLog{
+        width: 45%;
+        margin-left: 15%;
+        border: 2px solid #252424;
+        background-color: #252424;
+        height: 35px;
+        border-radius: 5px;
+        color: white;
+    }
+    .buttonCan{
+        width: 20%;
+        margin-left: 4%;
+        border: 2px solid #c1bebe;
+        background-color: #c1bebe;
+        height: 35px;
+        border-radius: 5px;
+        color: white;
+    }
+</style>
+
