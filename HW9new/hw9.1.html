@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW 9.1</title>
+</head>
+<body>
+    <script>
+
+    let calculator = {
+        num1: null,
+        num2: null,
+        read() {
+            this.num1 = prompt('first');
+            this.num2 = prompt('second');
+        },
+        sum() {
+            return Number(this.num1) + Number(this.num2);
+        },
+        mul() {
+            return Number(this.num1) * Number(this.num2);
+        }
+    };
+
+    calculator.read();
+    alert(calculator.sum());
+    alert(calculator.mul());
+    
+    </script>
+</body>
+</html>
