@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HW7.1</title>
+</head>
+<body>
+	
+</body>
+</html>
+<html>
+<head>
+	<title>Chat</title>
+
+</head>
+<body>
+	<main>
+		<div>
+			<form onsubmit="enterName()">
+				<input type="text" name="name" id="name" placeholder="Enter your name">
+				<button>Submit name</button>
+			</form>
+		</div>
+		<br>
+		<div>
+			<form onsubmit="sendMessage()">
+				<input type="text" name="y-name" id="y-name" placeholder="Enter message author">
+				<textarea rows="5" cols="10" id="y-text" placeholder="Enter text"></textarea>
+				<button>Submit message</button>
+			</form>
+		</div>
+		<div id="messages">
+			
+		</div>
+		<!--    
+
+			<div class="message" style="border-bottom: 1px solid black" class="left">
+				<h3>
+					<b>Author: Test</b>
+				</h3>
+				<p>Message: message 1</p>
+			</div>
+			
+
+		-->
+	</main>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<style type="text/css">
+		.left {
+			text-align: left;
+		}
+		.right {
+			text-align: right;
+		}
+		form {
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-start;
+			width: 400px;
+		}
+		#messages {
+			width: 700px;
+			border: 1px solid gray;
+			overflow: hidden;
+		}
+	</style>
+</body>
+</html>
+
